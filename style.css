@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainone {
+    width: 100%;
+    height: 100dvh;
+    border: 1px solid red;
+}
+
+.mainone .navbar {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+    border: 2px solid black;
+    z-index: 5212;
+    background: blue;
+}
+
+.navbar>.logo {
+    width: 152px;
+    height: 32px;
+    padding: 0 16px;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar>.logo>a {
+    width: 120px;
+    height: 24px;
+}
+
+.navbar>.logo svg {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    color: black;
+}
+
+.navbar>ul {
+    padding: 0 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.navbar>ul>li {
+    height: 32px;
+    padding: 4px 8px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid yellow;
+    /* position: relative; */
+    transition: 3s;
+}
+
+.navbar>ul>li>span {
+    border: 1px solid green;
+    margin: 0 8px;
+    font-weight: 700;
+}
+
+.login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.login>li {
+    width: 36px;
+    height: 32.8px;
+    list-style: none;
+}
+
+.login>li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 4px 8px;
+    margin: 0px 4px 0px 0px;
+}
+
+.login>li>a:nth-child(3) {
+    margin: 0px 16px 0px 0px !important;
+}
+
+ul li:hover .infirstli {
+    display: flex;
+    transform: translateY(0);
+}
+
+.infirstli {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    transform: translateY(-556px);
+    border: 2px solid black;
+    background: #000;
+    top: 56px;
+    left: 0;
+    transition: 2s;
+    z-index: 1;
+    /* display: none; */
+}
